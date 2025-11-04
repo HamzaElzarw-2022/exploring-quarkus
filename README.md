@@ -16,7 +16,7 @@ cd exploring-quarkus
 2) Build native (uses container build, so no local GraalVM is needed):
 
 ```bash
-quarkus build --native --no-tests -Dquarkus.native.container-build=true
+./mvnw clean package -Dnative -Dquarkus.native.container-build=true -DskipTests
 ```
 
 This produces a native binary at `target/exploring-quarkus-1.0.0-SNAPSHOT-runner`.
